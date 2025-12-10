@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Student Details Form (Created Using JavaScript)</h2>
+
+<div id="container"></div> <!-- JS will create the form here -->
+
+<script>
+    // Create the form
+    const form = document.createElement("form");
+
+    // Function to create label + input
+    function addField(labelText, name) {
+        const label = document.createElement("label");
+        label.innerText = labelText + ": ";
+        form.appendChild(label);
+
+        const input = document.createElement("input");
+        input.type = "text";
+        input.name = name;
+        form.appendChild(input);
+
+        form.appendChild(document.createElement("br"));
+        form.appendChild(document.createElement("br"));
+    }
+
+    // Add fields
+    addField("Name", "name");
+    addField("Roll No", "rollno");
+    addField("Department", "dept");
+    addField("College", "clg");
+    addField("Place", "place");
+
+    // Submit button
+    const submit = document.createElement("input");
+    submit.type = "submit";
+    submit.value = "Submit";
+    form.appendChild(submit);
+
+    // Add form to container
+    document.getElementById("container").appendChild(form);
+</script>
+
+</body>
+</html>
+
+
+
