@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Events = () => {
+const Event = () => {
   const [clickText, setClickText] = useState("Click the button");
   const [inputValue, setInputValue] = useState("");
   const [hoverText, setHoverText] = useState("Hover over me");
@@ -49,4 +49,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default Event;
